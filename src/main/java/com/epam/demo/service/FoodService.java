@@ -1,5 +1,7 @@
 package com.epam.demo.service;
 
+import java.util.List;
+
 import com.epam.demo.dao.FoodDao;
 import com.epam.demo.domain.Food;
 
@@ -14,6 +16,22 @@ public class FoodService {
 	
 	public Food getFood(int id) {
 		return foodDao.getFood(id);
+	}
+
+	public void addFood(Food food) {
+		foodDao.addFood(food);
+	}
+
+	public void updateFood(Food food) {
+		foodDao.updateFood(food);
+	}
+
+	public void deleteFood(int id) {
+		foodDao.deleteFood(id);
+	}
+
+	public List<Food> getFoodList() {
+		return foodDao.getFoodList();
 	}
 	
 	

@@ -6,8 +6,14 @@ import com.epam.demo.domain.Food;
 
 public interface FoodDao {
 	
-	//List<Food> ListFoods();
+	void addFood(Food food);
 	
 	Food getFood(int id);
-
+	
+	void updateFood(Food food);
+	
+	void deleteFood(int id);
+	
+	List<Food> getFoodList();
+	
 }
