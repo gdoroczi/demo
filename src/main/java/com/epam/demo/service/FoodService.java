@@ -18,8 +18,8 @@ public class FoodService {
 		return foodDao.getFood(id);
 	}
 
-	public void addFood(Food food) {
-		foodDao.addFood(food);
+	public int addFood(Food food) {
+		return foodDao.addFood(food);
 	}
 
 	public void updateFood(Food food) {

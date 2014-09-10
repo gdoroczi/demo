@@ -1,4 +1,4 @@
-package com.epam.demo.config;
+package com.epam.demo.spring;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -6,7 +6,7 @@ import com.epam.demo.domain.Food;
 
 public interface FoodDao {
 	
-	void addFood(Food food);
+	int addFood(Food food);
 	
 	Food getFood(int id);
 	

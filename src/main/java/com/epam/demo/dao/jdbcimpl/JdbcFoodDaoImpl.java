@@ -44,7 +44,7 @@ public class JdbcFoodDaoImpl extends GenericJdbcDao implements FoodDao {
 	}
 
 	@Override
-	public void addFood(Food food) {
+	public int addFood(Food food) {
 		String sql = "INSERT INTO food (name) VALUES (?)";
 
 		try (Connection conn = dataSource.getConnection();
@@ -57,6 +57,8 @@ public class JdbcFoodDaoImpl extends GenericJdbcDao implements FoodDao {
 				rs.next();
 				food.setId(rs.getInt(1));
 			}
+			
+			return food.getId();
 
 		} catch (SQLException e) {
 			throw new RuntimeException(e);

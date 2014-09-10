@@ -1,4 +1,4 @@
-package com.epam.demo.config;
+package com.epam.demo.spring;
 
 import javax.sql.DataSource;
 

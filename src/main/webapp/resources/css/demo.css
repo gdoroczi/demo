@@ -1,0 +1,15 @@
+#foodList {
+    margin:0 auto;
+    width:50%;
+}
+
+.alert {
+    display: none;
+    position: fixed;
+    top: 51px;
+    margin: 0 auto;
+    width: 300px;
+    left: 40%;
+    font-weight: bold;
+    text-align: center;
+}
