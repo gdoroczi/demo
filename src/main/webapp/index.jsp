@@ -26,6 +26,7 @@
                 <h2>Adding food items</h2>
                 <input id="newFood" type="text" /> <span id="addButton" class="btn btn-primary">Add</span>
                 <h2>Food list</h2>
+                <p>Click on food's name to edit</p>
                 <table id="foodList" class="table">
                     <thead>
                         <tr>
